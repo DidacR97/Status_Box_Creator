@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F5F5F5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="model.SBC_Controller">
+   <children>
+      <Label layoutY="-2.0" prefHeight="89.0" prefWidth="600.0" style="-fx-background-color: white; -fx-border-color: ;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <ImageView fitHeight="105.0" fitWidth="249.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cropped-geprom-logo.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="statusNumber" layoutX="31.0" layoutY="153.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="382.0" />
+      <TextField fx:id="ellipsesNumber" layoutX="31.0" layoutY="234.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="382.0" />
+      <Text layoutX="31.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of status:" wrappingWidth="187.0" AnchorPane.leftAnchor="30.0" />
+      <Text layoutX="31.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of ellipses per status:" wrappingWidth="215.0" AnchorPane.leftAnchor="30.0" />
+      <CheckBox fx:id="disconnected" layoutX="30.0" layoutY="349.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="187.0" selected="true" text="Disconnected ellipse" AnchorPane.leftAnchor="30.0" />
+      <Button fx:id="getCode" layoutX="471.0" layoutY="333.0" mnemonicParsing="false" onAction="#onClickButton" text="Get the Code" />
+      <TextArea fx:id="svgViewer" editable="false" layoutX="263.0" layoutY="100.0" prefHeight="200.0" prefWidth="316.0" wrapText="true" />
+      <TextField fx:id="defTab" disable="true" layoutX="31.0" layoutY="285.0" prefHeight="31.0" prefWidth="60.0" text="2" />
+      <CheckBox fx:id="defCheckTab" layoutX="104.0" layoutY="290.0" mnemonicParsing="false" onAction="#onClickCheckBoxDefTab" prefHeight="21.0" prefWidth="108.0" selected="true" text="Default Tab" />
+      <Button fx:id="help" layoutX="552.0" layoutY="11.0" mnemonicParsing="false" onAction="#showAlertInfo" text="?" />
+      <Button fx:id="about" layoutX="497.0" layoutY="48.0" mnemonicParsing="false" onAction="#openBrowser" text="About Us" />
+   </children>
+</AnchorPane>
